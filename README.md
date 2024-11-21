@@ -19,7 +19,7 @@
 
 ## 自用手机键盘示例：
 
-![手机键盘](https://github.com/Rayalizing/TigerMatrix/assets/keyboard.png)
+![手机键盘](https://github.com/Rayalizing/TigerMatrix/blob/main/hamster_keyboard_for_TM.jpg)
 
 ## 食用方法：
 
