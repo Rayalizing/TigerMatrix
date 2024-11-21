@@ -1,0 +1,7 @@
+patch:
+  translator/dictionary: Tiger_Matrix.extended  #引入增补自定词典，这个不要改动
+
+  # 在这里自定义你的配置
+  menu/alternative_select_labels: [ ㊀, ㊁, ㊂, ㊃, ㊄, ㊅, ㊆, ㊇, ㊈ ]  # 自定义候选序号显示符，可自定修改，如要显示阿拉伯数字，直接注释掉这行（在前面加#号）
+  # menu/page_size: 9  # 候选数量
+  # punctuator/import_preset: TM_symbols

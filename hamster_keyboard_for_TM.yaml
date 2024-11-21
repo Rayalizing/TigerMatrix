@@ -1,0 +1,2617 @@
+colorSchemas:
+  - schemaName: lv
+    name: 护眼绿·浅☕️
+    author: 咖啡
+    back_color: "0xEFF2F6"
+    button_back_color: "0x2F6041"
+    button_pressed_back_color: "0x6EB88C"
+    button_bubble_back_color: "0x6EB88C"
+    button_foreground_color: "0x696969"
+    button_pressed_foreground_color: "0xFFFFFF"
+    button_swipe_foreground_color: "0x5AFFFFFF"
+    button_swipe_pressed_foreground_color: "0x000000"
+    font_size: 16
+    swipe_font_size: 8
+    corner_radius: 10
+    border_color: "0x01000000"
+    border_size: 1
+    text_color: "0x696969"
+    lower_edge_color: "0x01000000"
+    shadow_color: "0x000000"
+    shadow_size: 2
+    hilited_candidate_back_color: "0xEFF2F6"
+    hilited_candidate_text_color: "0xFA2D7246"
+    hilited_candidate_label_color: "0x2D7246"
+    hilited_comment_text_color: "0x2D7246"
+    candidate_text_color: "0x696969"
+    comment_text_color: "0x696969"
+    label_color: "0x696969"
+    hilited_callout_back_color: "0xEFF2F6"
+    hilited_callout_foreground_color: "0x2D7246"
+    action_callout_back_color: "0xD0D0D0"
+  - schemaName: lvan
+    name: 护眼绿·深☕️
+    author: 咖啡
+    back_color: "0x243D2F"
+    button_back_color: "0x4D9962"
+    button_pressed_back_color: "0x2D7246"
+    button_bubble_back_color: "0x2D7246"
+    button_foreground_color: "0xE9F2F6"
+    button_pressed_foreground_color: "0xE9F2F6"
+    button_swipe_foreground_color: "0x5AE9F2F6"
+    button_swipe_pressed_foreground_color: "0x000000"
+    font_size: 16
+    swipe_font_size: 8
+    corner_radius: 10
+    border_color: "0x01000000"
+    border_size: 1
+    text_color: "0x36F2F4"
+    lower_edge_color: "0x01000000"
+    shadow_color: "0x000000"
+    shadow_size: 2
+    hilited_candidate_back_color: "0x243D2F"
+    hilited_candidate_text_color: "0xFA36F2F4"
+    hilited_candidate_label_color: "0x36F2F4"
+    hilited_comment_text_color: "0x36F2F4"
+    candidate_text_color: "0xE9F2F6"
+    comment_text_color: "0xE9F2F6"
+    label_color: "0xE9F2F6"
+    hilited_callout_back_color: "0x243D2F"
+    hilited_callout_foreground_color: "0x36F2F4"
+    action_callout_back_color: "0xD0D0D0"
+  - schemaName: jianbian
+    name: 渐变☕️
+    author: 咖啡
+    back_color: "0xEFEFEF"
+    button_back_color: "0xFDFDFD"
+    button_pressed_back_color: "0xF4F6F4"
+    button_bubble_back_color: "0xFF9960"
+    button_foreground_color: "0x696969"
+    button_pressed_foreground_color: "0x696969"
+    button_swipe_foreground_color: "0x696969"
+    button_swipe_pressed_foreground_color: "0x000000"
+    font_size: 16
+    swipe_font_size: 8
+    corner_radius: 10
+    border_color: "0x01000000"
+    border_size: 1
+    text_color: "0x696969"
+    lower_edge_color: "0x01000000"
+    shadow_color: "0x474747"
+    shadow_size: 2
+    hilited_candidate_back_color: "0xFDFDFD"
+    hilited_candidate_text_color: "0xFA708E4D"
+    hilited_candidate_label_color: "0x696969"
+    hilited_comment_text_color: "0x696969"
+    candidate_text_color: "0x696969"
+    comment_text_color: "0x696969"
+    label_color: "0x696969"
+    hilited_callout_back_color: "0xFDFDFD"
+    hilited_callout_foreground_color: "0x708E4D"
+    action_callout_back_color: "0xD0D0D0"
+  - schemaName: huicheng
+    name: 灰橙☕
+    author: 咖啡
+    back_color: "0x4D4D4D"
+    button_back_color: "0xFAFAFA"
+    button_pressed_back_color: "0x1E82F8"
+    button_bubble_back_color: "0x1E82F8"
+    button_foreground_color: "0x606060"
+    button_pressed_foreground_color: "0xFFFFFF"
+    button_swipe_foreground_color: "0xA5A5A5"
+    button_swipe_pressed_foreground_color: "0x000000"
+    font_size: 17
+    swipe_font_size: 8
+    corner_radius: 6
+    border_color: "0x01000000"
+    border_size: 1
+    text_color: "0xFAFAFA"
+    lower_edge_color: "0x5F000000"
+    shadow_color: "0x000000"
+    shadow_size: 1
+    hilited_candidate_back_color: "0xF9F9F9"
+    hilited_candidate_text_color: "0x1E82F8"
+    hilited_candidate_label_color: "0x606060"
+    hilited_comment_text_color: "0x606060"
+    candidate_text_color: "0xFAFAFA"
+    comment_text_color: "0xFAFAFA"
+    label_color: "0xFAFAFA"
+    hilited_callout_back_color: "0xFAFAFA"
+    hilited_callout_foreground_color: "0x1E82F8"
+    action_callout_back_color: "0xD0D0D0"
+  - schemaName: xiankuang
+    name: 线框☕️
+    author: 咖啡
+    back_color: "0xFAFAFA"
+    button_back_color: "0xFEFEFE"
+    button_pressed_back_color: "0x000000"
+    button_bubble_back_color: "0xFEFEFE"
+    button_foreground_color: "0x000000"
+    button_pressed_foreground_color: "0xFFFFFF"
+    button_swipe_foreground_color: "0x5C5C5C"
+    button_swipe_pressed_foreground_color: "0x000000"
+    font_size: 17
+    swipe_font_size: 8
+    corner_radius: 8
+    border_color: "0x000000"
+    border_size: 2
+    text_color: "0x000000"
+    lower_edge_color: "0x01000000"
+    shadow_color: "0x01000000"
+    shadow_size: 0
+    hilited_candidate_back_color: "0xFDFDFD"
+    hilited_candidate_text_color: "0xFA8C5454"
+    hilited_candidate_label_color: "0x000000"
+    hilited_comment_text_color: "0x5C5C5C"
+    candidate_text_color: "0x000000"
+    comment_text_color: "0x5C5C5C"
+    label_color: "0x000000"
+    hilited_callout_back_color: "0xFAFAFA"
+    hilited_callout_foreground_color: "0xFAFAFA"
+    action_callout_back_color: "0xD0D0D0"
+keyboards:
+  - name: 护眼绿中文☕️
+    isPrimary: true
+    rows:
+      - keys:
+          - action:
+              character:
+                char: "#"
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.12
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "-"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+              - action:
+                  character:
+                    char: _
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: down
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: /
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.12
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: \
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "1"
+            width: available
+            label: QW
+            swipe:
+              - action:
+                  character:
+                    char: "1"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "%"
+            width: available
+            label: ABC
+            swipe:
+              - action:
+                  character:
+                    char: "2"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "&"
+            width: available
+            label: DEF
+            swipe:
+              - action:
+                  character:
+                    char: "3"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action: backspace
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  shortcutCommand: "#重输"
+                label: ø
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 灰橙_上档
+            darkModeStyleName: 灰橙_上档
+      - keys:
+          - action:
+              character:
+                char: "["
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.12
+            label: ( [ )
+            swipe:
+              - action:
+                  character:
+                    char: "]"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+              - action:
+                  character:
+                    char: (
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: left
+              - action:
+                  character:
+                    char: )
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: right
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "*"
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.12
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: ^
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "4"
+            width: available
+            label: GHI
+            swipe:
+              - action:
+                  character:
+                    char: "4"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "5"
+            width: available
+            label: JKL
+            swipe:
+              - action:
+                  character:
+                    char: "5"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "6"
+            width: available
+            label: MNO
+            swipe:
+              - action:
+                  character:
+                    char: "6"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: ;
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: ":"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+      - keys:
+          - action: shift
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.12
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "`"
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.12
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "~"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "7"
+            width: available
+            label: PRS
+            swipe:
+              - action:
+                  character:
+                    char: "7"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  shortcutCommand: "#行首"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: down
+              - action:
+                  shortcutCommand: "#行首"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: left
+              - action:
+                  shortcutCommand: "#行首"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: right
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "8"
+            width: available
+            label: TUV
+            swipe:
+              - action:
+                  character:
+                    char: "8"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "9"
+            width: available
+            label: XYZ
+            swipe:
+              - action:
+                  character:
+                    char: "9"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  shortcutCommand: "#行尾"
+                label: 󰞔
+                display: true
+                processByRIME: true
+                direction: down
+              - action:
+                  shortcutCommand: "#行尾"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: left
+              - action:
+                  shortcutCommand: "#行尾"
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: right
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "'"
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: '"'
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+      - keys:
+          - action:
+              keyboardType: 护眼绿中文数字符号☕️
+            width:
+              portrait:
+                percentage: 0.11
+              landscape:
+                percentage: 0.1
+            label: 符
+            swipe:
+              - action:
+                  keyboardType: emojis
+                label:
+                  text: ""
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿英文☕️
+            width:
+              portrait:
+                percentage: 0.11
+              landscape: available
+            label: 英
+            swipe:
+              - action:
+                  keyboardType: 护眼绿中文数字☕️
+                label: "123"
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: space
+            width:
+              portrait:
+                percentage: 0.39
+              landscape:
+                percentage: 0.4
+            label: 🐰🌰🐿
+            swipe:
+              - action:
+                  character:
+                    char: "0"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+              - action:
+                  character:
+                    char: "0"
+                label:
+                  text: ""
+                display: false
+                processByRIME: true
+                direction: down
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              character:
+                char: ","
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: .
+                label: 。
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: enter
+            width:
+              portrait:
+                percentage: 0.23
+              landscape:
+                percentage: 0.2
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_回车
+            darkModeStyleName: 灰橙_回车
+      - keys:
+          - action: none
+            width: available
+            label:
+              text: ""
+        rowHeight:
+          portrait: 2
+          landscape: 10
+    buttonInsets:
+      left: 3
+      bottom: 3
+      top: 3
+      right: 2
+    keyStyle:
+      护眼绿_Q_浅: &a3
+        name: 护眼绿_Q_浅
+        buttonBackgroundColor: "0x72BF90"
+        pressedButtonBackgroundColor: "0x4D9962"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x82E9F2F6"
+        pressedSwipeForegroundColor: "0x82E9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x01000000"
+        lowerEdgeColor: "0x01474747"
+        shadowColor: "0x000000"
+        shadowSize: 2
+        fontSize: 16
+        swipeFontSize: 8
+      护眼绿_Q_深: &a4
+        name: 护眼绿_Q_深
+        buttonBackgroundColor: "0x72BF90"
+        pressedButtonBackgroundColor: "0x4D9962"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x82E9F2F6"
+        pressedSwipeForegroundColor: "0x82E9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x000000"
+        lowerEdgeColor: "0x01474747"
+        shadowColor: "0x000000"
+        shadowSize: 0
+        fontSize: 16
+        swipeFontSize: 8
+      灰橙_上档: &a5
+        name: 灰橙_上档
+        buttonBackgroundColor: "0xBBBBBB"
+        pressedButtonBackgroundColor: "0x898989"
+        buttonForegroundColor: "0x555555"
+        pressedButtonForegroundColor: "0xFFFFFF"
+        swipeForegroundColor: "0x555555"
+        pressedSwipeForegroundColor: "0x555555"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 5
+        borderSize: 0
+        borderColor: "0x000000"
+        lowerEdgeColor: "0x5F000000"
+        shadowColor: "0x000000"
+        shadowSize: 1
+        fontSize: 17
+        swipeFontSize: 8
+      护眼绿_A_浅: &a1
+        name: 护眼绿_A_浅
+        buttonBackgroundColor: "0x4D9962"
+        pressedButtonBackgroundColor: "0x6EB88C"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x5AE9F2F6"
+        pressedSwipeForegroundColor: "0x5AE9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x01000000"
+        lowerEdgeColor: "0x01000000"
+        shadowColor: "0x000000"
+        shadowSize: 2
+        fontSize: 16
+        swipeFontSize: 8
+      护眼绿_A_深: &a2
+        name: 护眼绿_A_深
+        buttonBackgroundColor: "0x4D9962"
+        pressedButtonBackgroundColor: "0x2D7246"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x5AE9F2F6"
+        pressedSwipeForegroundColor: "0x5AE9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x000000"
+        lowerEdgeColor: "0x01000000"
+        shadowColor: "0x000000"
+        shadowSize: 0
+        fontSize: 16
+        swipeFontSize: 8
+      护眼绿_Z_浅: &a6
+        name: 护眼绿_Z_浅
+        buttonBackgroundColor: "0x2D7246"
+        pressedButtonBackgroundColor: "0x6EB88C"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x5AE9F2F6"
+        pressedSwipeForegroundColor: "0x5AE9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x01000000"
+        lowerEdgeColor: "0x01000000"
+        shadowColor: "0x000000"
+        shadowSize: 2
+        fontSize: 16
+        swipeFontSize: 8
+      护眼绿_Z_深: &a7
+        name: 护眼绿_Z_深
+        buttonBackgroundColor: "0x2D7246"
+        pressedButtonBackgroundColor: "0x2F6041"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x5AE9F2F6"
+        pressedSwipeForegroundColor: "0x5AE9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x000000"
+        lowerEdgeColor: "0x01000000"
+        shadowColor: "0x000000"
+        shadowSize: 0
+        fontSize: 16
+        swipeFontSize: 8
+      护眼绿_数字_浅: &a8
+        name: 护眼绿_数字_浅
+        buttonBackgroundColor: "0x2F6041"
+        pressedButtonBackgroundColor: "0x6EB88C"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x5AE9F2F6"
+        pressedSwipeForegroundColor: "0x5AE9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x01000000"
+        lowerEdgeColor: "0x01000000"
+        shadowColor: "0x000000"
+        shadowSize: 2
+        fontSize: 16
+        swipeFontSize: 8
+      护眼绿_数字_深: &a9
+        name: 护眼绿_数字_深
+        buttonBackgroundColor: "0x2F6041"
+        pressedButtonBackgroundColor: "0x4D9962"
+        buttonForegroundColor: "0xE9F2F6"
+        pressedButtonForegroundColor: "0xE9F2F6"
+        swipeForegroundColor: "0x5AE9F2F6"
+        pressedSwipeForegroundColor: "0x5AE9F2F6"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 10
+        borderSize: 0
+        borderColor: "0x000000"
+        lowerEdgeColor: "0x01000000"
+        shadowColor: "0x000000"
+        shadowSize: 0
+        fontSize: 16
+        swipeFontSize: 8
+      灰橙_回车: &a10
+        name: 灰橙_回车
+        buttonBackgroundColor: "0x1E82F8"
+        pressedButtonBackgroundColor: "0xFAFAFA"
+        buttonForegroundColor: "0x606060"
+        pressedButtonForegroundColor: "0x606060"
+        swipeForegroundColor: "0x606060"
+        pressedSwipeForegroundColor: "0x606060"
+        buttonBubbleBackgroundColor: "0xD0D0D0"
+        cornerRadius: 5
+        borderSize: 0
+        borderColor: "0x000000"
+        lowerEdgeColor: "0x5F000000"
+        shadowColor: "0x000000"
+        shadowSize: 1
+        fontSize: 17
+        swipeFontSize: 8
+  - name: 护眼绿中文数字☕️
+    isPrimary: true
+    rows:
+      - keys:
+          - action:
+              character:
+                char: +
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "-"
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "1"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "2"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "3"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action: backspace
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_上档
+            darkModeStyleName: 灰橙_上档
+      - keys:
+          - action:
+              character:
+                char: "*"
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label: ×
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: /
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label: ÷
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "4"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "5"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "6"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: "@"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+      - keys:
+          - action:
+              character:
+                char: (
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: )
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "7"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "8"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "9"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: =
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+      - keys:
+          - action:
+              keyboardType: 护眼绿中文☕️
+            width: available
+            label: 中
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: space
+            processByRIME: false
+            width: available
+            label: 🐰🌰🐿
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              character:
+                char: "0"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              symbol:
+                char: .
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: enter
+            processByRIME: false
+            width:
+              portrait: available
+              landscape:
+                percentage: 0.2
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_回车
+            darkModeStyleName: 灰橙_回车
+      - keys:
+          - action: none
+            width: available
+            label:
+              text: ""
+        rowHeight:
+          portrait: 2
+          landscape: 10
+    buttonInsets:
+      left: 3
+      bottom: 3
+      top: 3
+      right: 2
+    keyStyle:
+      护眼绿_A_浅: *a1
+      护眼绿_A_深: *a2
+      护眼绿_Q_浅: *a3
+      护眼绿_Q_深: *a4
+      灰橙_上档: *a5
+      护眼绿_Z_浅: *a6
+      护眼绿_Z_深: *a7
+      护眼绿_数字_浅: *a8
+      护眼绿_数字_深: *a9
+      灰橙_回车: *a10
+  - name: 护眼绿中文数字符号☕️
+    isPrimary: false
+    rows:
+      - keys:
+          - action:
+              character:
+                char: "1"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "2"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "3"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "4"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "5"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "6"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "7"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "8"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "9"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "0"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+      - keys:
+          - action:
+              character:
+                char: "~"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: /
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: ：
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: ；
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: （
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: ）
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "&"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "@"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: “
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: ”
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+      - keys:
+          - action:
+              keyboardType: classifySymbolic
+            width:
+              portrait:
+                percentage: 0.14
+              landscape:
+                percentage: 0.13
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action: none
+            width:
+              portrait:
+                percentage: 0.01
+              landscape:
+                percentage: 0.02
+            label:
+              text: ""
+          - action:
+              character:
+                char: "-"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: ——
+            width: available
+            label: _
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "#"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: ？
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: ！
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: ，
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: 。
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action: none
+            width:
+              portrait:
+                percentage: 0.01
+              landscape:
+                percentage: 0.02
+            label:
+              text: ""
+          - action: backspace
+            width:
+              portrait:
+                percentage: 0.14300000000000002
+              landscape: available
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_上档
+            darkModeStyleName: 灰橙_上档
+      - keys:
+          - action:
+              keyboardType: 护眼绿中文☕️
+            width:
+              portrait:
+                percentage: 0.14
+              landscape: available
+            label: 中
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿中文数字☕️
+            width:
+              portrait:
+                percentage: 0.13
+              landscape: available
+            label: "123"
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: space
+            width:
+              portrait: available
+              landscape:
+                percentage: 0.5
+            label: 🐰🌰🐿
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿英文数字符号☕️
+            width:
+              portrait:
+                percentage: 0.12
+              landscape: available
+            label: 全/半
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: enter
+            width:
+              portrait:
+                percentage: 0.23
+              landscape:
+                percentage: 0.2
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_回车
+            darkModeStyleName: 灰橙_回车
+      - keys:
+          - action: none
+            width: available
+            label:
+              text: ""
+        rowHeight:
+          portrait: 2
+          landscape: 10
+    buttonInsets:
+      left: 3
+      bottom: 3
+      top: 3
+      right: 2
+    keyStyle:
+      护眼绿_Q_浅: *a3
+      护眼绿_Q_深: *a4
+      护眼绿_A_浅: *a1
+      护眼绿_A_深: *a2
+      护眼绿_Z_浅: *a6
+      护眼绿_Z_深: *a7
+      灰橙_上档: *a5
+      护眼绿_数字_浅: *a8
+      护眼绿_数字_深: *a9
+      灰橙_回车: *a10
+  - name: 护眼绿英文☕️
+    isPrimary: true
+    rows:
+      - keys:
+          - action:
+              character:
+                char: q
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "1"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: w
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "2"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: e
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "3"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: r
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "4"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: t
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "5"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: y
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "6"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: u
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "7"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: i
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "8"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: o
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "9"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: p
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  character:
+                    char: "0"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+      - keys:
+          - action: none
+            processByRIME: false
+            width:
+              percentage: 0.05
+            label:
+              text: ""
+          - action:
+              character:
+                char: a
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "~"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: s
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: /
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: d
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: ":"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: f
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: ;
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: g
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: (
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: h
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: )
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: j
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "@"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: k
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: '"'
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: l
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "'"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action: none
+            processByRIME: false
+            width:
+              percentage: 0.05
+            label:
+              text: ""
+      - keys:
+          - action: shift
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.14
+              landscape:
+                percentage: 0.13
+            label:
+              text: ""
+            swipe:
+              - action: tab
+                label:
+                  text: ""
+                display: false
+                processByRIME: false
+                direction: up
+              - action: tab
+                label:
+                  text: ""
+                display: false
+                processByRIME: true
+                direction: down
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action: none
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.01
+              landscape:
+                percentage: 0.02
+            label:
+              text: ""
+          - action:
+              character:
+                char: z
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "-"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: x
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: _
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: c
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "#"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: v
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "?"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: b
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: "!"
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: n
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: ","
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: m
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  symbol:
+                    char: .
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action: none
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.01
+              landscape:
+                percentage: 0.02
+            label:
+              text: ""
+          - action: backspace
+            width:
+              portrait:
+                percentage: 0.14300000000000002
+              landscape: available
+            label:
+              text: ""
+            swipe:
+              - action:
+                  shortcutCommand: "#重输"
+                label: ø
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 灰橙_上档
+            darkModeStyleName: 灰橙_上档
+      - keys:
+          - action:
+              keyboardType: 护眼绿英文数字符号☕️
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.14
+              landscape:
+                percentage: 0.2
+            label: "!?#"
+            swipe:
+              - action:
+                  keyboardType: emojis
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿中文☕️
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.12
+              landscape: available
+            label: 中
+            swipe:
+              - action:
+                  keyboardType: 护眼绿英文数字☕️
+                label: "123"
+                display: true
+                processByRIME: true
+                direction: up
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: space
+            processByRIME: false
+            width:
+              portrait: available
+              landscape:
+                percentage: 0.4
+            label: 🐰🌰🐿
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿英文数字☕️
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.13
+              landscape: available
+            label: "123"
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: enter
+            width:
+              portrait:
+                percentage: 0.23
+              landscape:
+                percentage: 0.2
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_回车
+            darkModeStyleName: 灰橙_回车
+      - keys:
+          - action: none
+            width: available
+            label:
+              text: ""
+        rowHeight:
+          portrait: 2
+          landscape: 10
+    buttonInsets:
+      left: 3
+      bottom: 3
+      top: 3
+      right: 2
+    keyStyle:
+      护眼绿_Q_浅: *a3
+      护眼绿_Q_深: *a4
+      护眼绿_A_浅: *a1
+      护眼绿_A_深: *a2
+      护眼绿_Z_浅: *a6
+      护眼绿_Z_深: *a7
+      灰橙_上档: *a5
+      护眼绿_数字_浅: *a8
+      护眼绿_数字_深: *a9
+      灰橙_回车: *a10
+  - name: 护眼绿英文数字☕️
+    isPrimary: true
+    rows:
+      - keys:
+          - action:
+              character:
+                char: +
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "-"
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "1"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "2"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "3"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action: backspace
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_上档
+            darkModeStyleName: 灰橙_上档
+      - keys:
+          - action:
+              character:
+                char: "*"
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label: ×
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: /
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label: ÷
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "4"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "5"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "6"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: "@"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+      - keys:
+          - action:
+              character:
+                char: (
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: )
+            processByRIME: false
+            width:
+              percentage: 0.1
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              character:
+                char: "7"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "8"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "9"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: =
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+      - keys:
+          - action:
+              keyboardType: 护眼绿英文☕️
+            width: available
+            label: En
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: space
+            processByRIME: false
+            width: available
+            label: 🐰🌰🐿
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              character:
+                char: "0"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              symbol:
+                char: .
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: enter
+            width:
+              portrait: available
+              landscape:
+                percentage: 0.2
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_回车
+            darkModeStyleName: 灰橙_回车
+      - keys:
+          - action: none
+            width: available
+            label:
+              text: ""
+        rowHeight:
+          portrait: 2
+          landscape: 10
+    buttonInsets:
+      left: 3
+      bottom: 3
+      top: 3
+      right: 2
+    keyStyle:
+      护眼绿_A_浅: *a1
+      护眼绿_A_深: *a2
+      护眼绿_Q_浅: *a3
+      护眼绿_Q_深: *a4
+      灰橙_上档: *a5
+      护眼绿_Z_浅: *a6
+      护眼绿_Z_深: *a7
+      护眼绿_数字_浅: *a8
+      护眼绿_数字_深: *a9
+      灰橙_回车: *a10
+  - name: 护眼绿英文数字符号☕️
+    isPrimary: false
+    rows:
+      - keys:
+          - action:
+              character:
+                char: "1"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "2"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "3"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "4"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "5"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "6"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "7"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "8"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "9"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+          - action:
+              character:
+                char: "0"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Q_浅
+            darkModeStyleName: 护眼绿_Q_深
+      - keys:
+          - action:
+              symbol:
+                char: "~"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: /
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: ":"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: ;
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: (
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: )
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: "&"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: "@"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: '"'
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+          - action:
+              symbol:
+                char: "'"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_A_浅
+            darkModeStyleName: 护眼绿_A_深
+      - keys:
+          - action:
+              keyboardType: classifySymbolic
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.14
+              landscape:
+                percentage: 0.13
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action: none
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.01
+              landscape:
+                percentage: 0.02
+            label:
+              text: ""
+          - action:
+              character:
+                char: "-"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: _
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "#"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "?"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: "!"
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: ","
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action:
+              character:
+                char: .
+            processByRIME: false
+            width: available
+            label:
+              text: ""
+            lightModeStyleName: 护眼绿_Z_浅
+            darkModeStyleName: 护眼绿_Z_深
+          - action: none
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.01
+              landscape:
+                percentage: 0.02
+            label:
+              text: ""
+          - action: backspace
+            width:
+              portrait:
+                percentage: 0.14300000000000002
+              landscape: available
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_上档
+            darkModeStyleName: 灰橙_上档
+      - keys:
+          - action:
+              keyboardType: 护眼绿英文☕️
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.14
+              landscape: available
+            label: En
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿英文数字☕️
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.13
+              landscape: available
+            label: "123"
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: space
+            processByRIME: false
+            width:
+              portrait: available
+              landscape:
+                percentage: 0.5
+            label: 🐰🌰🐿
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action:
+              keyboardType: 护眼绿中文数字符号☕️
+            processByRIME: false
+            width:
+              portrait:
+                percentage: 0.12
+              landscape: available
+            label: 半/全
+            lightModeStyleName: 护眼绿_数字_浅
+            darkModeStyleName: 护眼绿_数字_深
+          - action: enter
+            width:
+              portrait:
+                percentage: 0.23
+              landscape:
+                percentage: 0.2
+            label:
+              text: ""
+            lightModeStyleName: 灰橙_回车
+            darkModeStyleName: 灰橙_回车
+      - keys:
+          - action: none
+            width: available
+            label:
+              text: ""
+        rowHeight:
+          portrait: 2
+          landscape: 10
+    buttonInsets:
+      left: 3
+      bottom: 3
+      top: 3
+      right: 2
+    keyStyle:
+      护眼绿_Q_浅: *a3
+      护眼绿_Q_深: *a4
+      护眼绿_A_浅: *a1
+      护眼绿_A_深: *a2
+      护眼绿_Z_浅: *a6
+      护眼绿_Z_深: *a7
+      灰橙_上档: *a5
+      护眼绿_数字_浅: *a8
+      护眼绿_数字_深: *a9
+      灰橙_回车: *a10

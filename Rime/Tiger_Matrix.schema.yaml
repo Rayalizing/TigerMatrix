@@ -1,0 +1,427 @@
+# Rime schema
+# encoding: utf-8
+
+# Tiger_Matrix: 虎码的【九键无重码】方案，是六码定长形码方案，通过增加两个码长，在九宫格上实现和虎码原生方案（Tiger/Tigress）**相同**的重码率（也就是几乎无重）。
+# 方案作者：Rayalizing
+# 该方案的优势：
+# 没有多余的记忆成本和学习成本。
+# - 只要你会虎码，则该方案的记忆成本为零——因为其码表和虎码原生方案完全相同；
+# - 只要你完整接受过初中教育，则增加的两个码长的学习成本为零。
+# 适用于电脑小键盘（数字键盘）、手机九键键盘（最好配合自定义布局的键盘使用）。
+# 本方案基于 Rime 引擎和[虎码](https://tiger-code.com/)方案，感谢大佬们的优秀开源。
+# 九键无重的巧妙思路，参考自知乎答主<同志请烧点水>的文章[九宫格双拼的无重码排布](https://zhuanlan.zhihu.com/p/107201990)。
+# 食用方法：
+# 1. 安装 Rime 输入法（鼠须管、小狼毫）；
+# 2. 按照虎码官方教程部署好虎码方案。
+# 3. 在用户配置文件中，将本方案放入用户文件夹根目录；
+# 4. 重新部署 Rime；
+# 5. 在输入法中，选择本方案，即可使用。
+
+schema:
+  name: 九键虎码(词版)
+  schema_id: Tiger_Matrix
+  author:
+    - {Rayalizing}
+  dependencies:
+    - core2022  #自定义字集工具方案
+    - PY_c  # 拼音方案
+    - easy_english # 英文
+  description: |
+    九键虎码
+    敲 ` 键拼音反查
+  version: "2024-11-21"
+
+switches: # 0 默认关，1 默认开
+  - name: ascii_punct
+    reset: 0
+    states: [ 。，, ．， ]
+  - name: emoji_cn  #emoji滤镜
+    reset: 1
+    states: [ 🈚, 🈶 ]
+  - name: chaifen
+    reset: 0 
+    states: [ 拆隐, 拆显 ]
+  - options: [_keyboard_default, _keyboard_defaultzj]
+    reset: 0
+    states: [ 助记关, 助记开 ]
+  - name: pinyin  #拼音滤镜
+    reset: 0
+    states: [ 拼, pīn ]
+  # - options: [ gb2312, gbk, utf8 ]
+  #   states: [ gb2312, GBK, UTF-8 ]
+  #   reset: 0
+  - name: simplification  #简转繁滤镜
+    reset: 0
+    states: [ 简中, 繁中 ]
+  - name: full_shape
+    reset: 0
+    states: [ 半角, 全角 ]
+  - name: extended_char  #自定义字集
+    reset: 1
+    states: [ 全集 , 常用 ]
+  - options: [_keyboard_default, _keyboard_defaultbk, _keyboard_defaultwk]
+    reset: 0
+    states: [ 有刻, 半刻, 无刻 ]
+  - name: charset_comment_filter  #字符集提示
+    reset: 0  
+    states: [ U区关, U区开 ]
+  - name: udpf_switch
+    reset: 0
+    states: [ U编关, U编开]
+  # - name: dz_ci  #过滤词组
+  #   reset: 0
+  #   states: [ 词组, 单字 ]
+  # - name: fanjian  #繁转简滤镜
+  #   reset: 0
+  #   states: [ 反繁, 反简 ]
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 英文 ]  #中英文状态
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - lua_processor@exe_processor #exe启动器
+    - selector
+    - navigator
+    - express_editor #计算
+  segmentors:  # 分段
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@easy_english #英文相关
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - echo_translator  # （没有其他结果时，）创建一个与编码串一模一样的候选项。
+    - punct_translator
+    - reverse_lookup_translator #拼音反查
+    - table_translator
+    - table_translator@easy_english #临时英文
+    - history_translator@historyDM # 重复上屏 电脑
+    - history_translator@historyDM2 # 重复上屏 电脑2
+    - history_translator@historyDM3 # 重复上屏 电脑3
+    - history_translator@historySJ # 重复上屏 手机
+    # - history_translator@historySJ2 # 重复上屏 手机2
+    - lua_translator@number_translator # 数字转大写
+    - lua_translator@calculator_translator # 简易计算器
+    - lua_translator@shijian2_translator # 高级时间
+
+
+  filters:
+    - lua_filter@core2022  #自定义字集过滤lua；放在最上面完美解决简繁滤镜出错的问题
+    # - lua_filter@dz_ci  #过滤词组lua，单字模式
+    # - charset_filter@utf8
+    # - charset_filter@gbk
+    # - charset_filter@gb2312
+    # - charset_filter@big5
+    - simplifier@simplification  #简繁滤镜
+    # - simplifier@fanjian  #繁简滤镜
+    # - reverse_lookup_filter@reverse_lookup #反查词典滤镜
+    - simplifier@pinyin  #拼音滤镜
+    - simplifier@chaifen #拆分滤镜
+    - simplifier@emoji_cn  #表情滤镜
+    - lua_filter@charset_comment_filter #Unicode分区提示滤镜
+    - lua_filter@lua_unicode_display_filter #Unicode编码显示
+    - uniquifier #过滤重复
+
+speller:
+  auto_clear: max_length # 3种选择， manual|auto|max_length 空码按下一键确认清屏|空码自动清|达到最长码时后码顶上清屏
+  auto_select: true
+  max_code_length: 6
+  # alphabet: "[;'zyxwvutsrqponmlkjihgfedcba]"
+  alphabet: "/*`;'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654&%1"
+  # initials: "abcdefghijklmnopqrstuvwxyz;'"
+  # auto_select_pattern: ^;\w+  # 自动上屏规则: 对 [;] 引导的编码实行候选唯一自动上屏
+  auto_select_pattern: ^;\w+|^\w{6}$|^[%&\w]+[*`/]  # 增加六码上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
+                      # 注意第三部分使用[%&\w]而不是\w，因为编码中可能出现的%&没有被“\w”包括。
+  algebra:
+  ################### 无重码的九键方案 ####################
+    # 将词典文件中符合对应模式的汉字编码，通过“xform/”或“derive/”转换/派生成新的编码。
+    # 所有四码：
+    ## 前半部分: 使用xform/，转换，确保第三个码不参与编码，仅有【选择】的作用。
+    - xform/([qadgjmptx][qadgjmptx])(\w\w)/$1Q$2/
+    - xform/([qadgjmptx][wbehknruy])(\w\w)/$1A$2/
+    - xform/([qadgjmptx][cfilosvz])(\w\w)/$1D$2/
+    - xform/([wbehknruy][qadgjmptx])(\w\w)/$1G$2/
+    - xform/([wbehknruy][wbehknruy])(\w\w)/$1J$2/
+    - xform/([wbehknruy][cfilosvz])(\w\w)/$1M$2/
+    - xform/([cfilosvz][qadgjmptx])(\w\w)/$1P$2/
+    - xform/([cfilosvz][wbehknruy])(\w\w)/$1T$2/
+    - xform/([cfilosvz][cfilosvz])(\w\w)/$1X$2/
+    ## 后半部分：使用derive/，派生，确保打到第五码时，候选框有字，有意义。
+    - derive/(\w\w\w)([qadgjmptx][qadgjmptx])/$1$2Q/
+    - derive/(\w\w\w)([qadgjmptx][wbehknruy])/$1$2A/
+    - derive/(\w\w\w)([qadgjmptx][cfilosvz])/$1$2D/
+    - derive/(\w\w\w)([wbehknruy][qadgjmptx])/$1$2G/
+    - derive/(\w\w\w)([wbehknruy][wbehknruy])/$1$2J/
+    - derive/(\w\w\w)([wbehknruy][cfilosvz])/$1$2M/
+    - derive/(\w\w\w)([cfilosvz][qadgjmptx])/$1$2P/
+    - derive/(\w\w\w)([cfilosvz][wbehknruy])/$1$2T/
+    - derive/(\w\w\w)([cfilosvz][cfilosvz])/$1$2X/
+    # 所有三码：
+    # ## 第3码：使用derive/，派生（此处有缺陷：派生后的码最后一位会混入四码的同位置编码，导致重码。）
+    # - derive/(\l\l[qadgjmptx])/$1$2Q/
+    # - derive/(\l\l[wbehknruy])/$1$2A/
+    # - derive/(\l\l[cfilosvz])/$1$2D/
+
+    ## 第3码：使用derive/，派生（用/*`代替，避免重码。
+    ### 注意同步调整speller/alphabet，使其包含/*`符号）; 
+    ### 注意同步speller/auto_select_pattern，增加[/*`]结尾编码的候选唯一自动上屏。
+    - derive/(\l\l)([qadgjmptx])/$1$2\x2F/  # \x2F为"/"的ASCII编码
+    - derive/(\l\l)([wbehknruy])/$1$2*/
+    - derive/(\l\l)([cfilosvz])/$1$2`/
+    ## 前2码：使用xform/，转换
+    - xform/([qadgjmptx][qadgjmptx])(\l)/$1Q$2/
+    - xform/([qadgjmptx][wbehknruy])(\l)/$1A$2/
+    - xform/([qadgjmptx][cfilosvz])(\l)/$1D$2/
+    - xform/([wbehknruy][qadgjmptx])(\l)/$1G$2/
+    - xform/([wbehknruy][wbehknruy])(\l)/$1J$2/
+    - xform/([wbehknruy][cfilosvz])(\l)/$1M$2/
+    - xform/([cfilosvz][qadgjmptx])(\l)/$1P$2/
+    - xform/([cfilosvz][wbehknruy])(\l)/$1T$2/
+    - xform/([cfilosvz][cfilosvz])(\l)/$1X$2/
+    # 所有二码：
+    ## 使用“derive/”，这样打到第二个码时，候选框有字，有意义。
+    - derive/^([qadgjmptx][qadgjmptx])$/$1Q/
+    - derive/^([qadgjmptx][wbehknruy])$/$1A/
+    - derive/^([qadgjmptx][cfilosvz])$/$1D/
+    - derive/^([wbehknruy][qadgjmptx])$/$1G/
+    - derive/^([wbehknruy][wbehknruy])$/$1J/
+    - derive/^([wbehknruy][cfilosvz])$/$1M/
+    - derive/^([cfilosvz][qadgjmptx])$/$1P/
+    - derive/^([cfilosvz][wbehknruy])$/$1T/
+    - derive/^([cfilosvz][cfilosvz])$/$1X/
+
+    # 所有一码：
+    # ## 使用“derive/”，这样打到第一个码时，候选框有字，有意义。
+    - derive/^([qadgjmptx])$/$1\x2F/
+    - derive/^([wbehknruy])$/$1*/
+    - derive/^([cfilosvz])$/$1`/
+    ### 以上灵活使用“derive/”和“xform/”，可以确保候选框随时都有信息，不会存在无意义的空框。
+      #同时让第三和第六码仅有选择的作用而不会扰乱原来的编码（如果使用derive的话，会导致第三和第六码增加重码）
+
+    # ## 删除二码操作后产生的冗余重复码：（上一步使用了^和$，所以不需要了）
+    # - xform/(\u){2}/$1/
+
+    # 将大写字母转换成小写字母
+    - xlit/QWERTYQIOPATDFGHJKLZXCVBNM/qwertyqiopatdfghjklzxcvbnm/
+    ################### /无重码的九键方案 ####################
+
+  ################### 适配九键布局 ###################
+    # （表达式参考自【仓*九宫格】方案的T9拼音穷举）
+    # 相比使用“xlit/”, “derive/”可以兼容原字母键盘，使得字母键盘和九键键盘可以同时使用。
+    - derive/[abc]/%/  # 这里用%代替2，保留数字2的选择功能，方便后续设置分号二选。
+    - derive/[def]/&/  # 这里用&代替3，保留数字3的选择功能，方便后续设置单引号三选。
+    - derive/[ghi]/4/
+    - derive/[jkl]/5/
+    - derive/[mno]/6/
+    - derive/[prs]/7/
+    - derive/[tuv]/8/
+    - derive/[xyz]/9/
+    - derive/[qw]/1/  # 和传统九宫格不同，这里将1键映射到 q 和 w。
+    ################# /适配九键布局 ###################
+
+    # 下面这行代码是“derive/”的替代方案，缺点是它会使电脑上的字母键盘无法打中文字，但可以打英文字母。
+    # - xlit/qwabcdefghijklmnoprstuvxyz/11222333444555666777888999/
+
+translator:
+  # dictionary: tiger
+  dictionary: Tiger_Matrix.extended
+  enable_charset_filter: false
+  enable_encoder: false
+  enable_sentence: false
+  encode_commit_history: false
+  # max_phrase_length: 4
+  enable_user_dict: false
+  enable_completion: false	# 编码提示 true 开启  false 关闭
+  comment_format:  #提示码自定义
+    - "xform/~/ /" #去掉编码提示前的~号
+    # - "xform/^/ /" #提示前面 +间距
+
+
+reverse_lookup:
+  dictionary: PY_c
+  prefix: "`"
+  tips: "〔拼音〕"
+  preedit_format:
+    - "xform/([nl])v/$1ü/"
+    - "xform/([nl])ue/$1üe/"
+    - "xform/([jqxy])v/$1u/"
+  comment_format:
+    - "xform/^/ /"
+  # suffix: "'"
+
+key_binder:  # 每条定义包含条件、接收按键（IBus规格的键名，可加修饰键，如「Control+Return」）、发送按键。
+  ## 键名查询：https://blog.csdn.net/weixin_42148809/article/details/135253082
+  #  import_preset: default
+  bindings:
+    #####################将小键盘 0~9 映射到主键盘，对应手机九宫格键盘的输入习惯。#####################
+    - {accept: KP_0, send: space, when: always}  # 这里的space似乎只有选择功能，不能输入“ ”空格！
+    # - {accept: KP_0, send: space, when: has_menu}
+    - {accept: KP_1, send: 7, when: always}           ## 小键盘布局图：
+    - {accept: KP_2, send: 8, when: always}    ##  Lock       /	      *		 ←
+    - {accept: KP_3, send: 9, when: always}    ##  1 qw     % abc   & def	 	
+    - {accept: KP_4, send: 4, when: always}    ##  4 ghi    5 jkl   6 mno	 `
+    - {accept: KP_5, send: 5, when: always}    ##  7 prs    8 tuv   9 xyz	 	
+    - {accept: KP_6, send: 6, when: always}    ##      Space		      ;    '
+    - {accept: KP_7, send: 1, when: always}    ##  说明：空格首选、分号次选（+符号输入）、单引号三选（+英文输入）；“/”表情输入（+lua）、反引号拼音反查。
+    - {accept: KP_8, send: percent, when: always}
+    - {accept: KP_9, send: ampersand, when: always}
+    - {accept: KP_Decimal,  send: semicolon,     when: always}  # 将小键盘的小数点映射到主键盘的。号
+    - {accept: KP_Enter,    send: apostrophe,      when: always}  # 将小键盘的Enter键映射到主键盘的,号
+    - {accept: KP_Divide,   send: slash,  when: always}  # 将小键盘的/键映射到主键盘的;键
+    - {accept: KP_Multiply, send: asterisk, when: always}  # 将小键盘的*键映射到主键盘的-号
+    - {accept: KP_Add,      send: grave,      when: always}  # 将小键盘的+键映射到主键盘的空格
+    - {accept: KP_Subtract, send: BackSpace,  when: always}  # 将小键盘的-键映射到主键盘的退格
+    #####################/将小键盘 0~9 映射到主键盘，对应手机九宫格键盘的输入习惯。#####################
+
+    #- { when: composing, accept: Return, send: Escape }
+    #- { accept: space, send: space, when: has_menu } #有候选时空格上屏首选
+    #- { accept: space, send: Escape, when: composing } #无候选时(空码)空格清屏
+    - { accept: semicolon, send: 2, when: has_menu } # 分号次选
+    - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
+    # - { accept: period, send: 2, when: has_menu } #句号次选 (用于iRime)
+    # - { accept: comma, send: 3, when: has_menu } #逗号三选 (用于iRime)
+    - { when: composing, accept: Tab, send: Escape } # tab清屏
+    - { when: has_menu, accept: minus, send: Page_Up } # - 向后翻页
+    - { when: has_menu, accept: equal, send: Page_Down } # = 向前翻页
+    # - { when: composing, accept: bracketleft, send: Page_Up } # [ 后翻
+    # - { when: composing, accept: bracketright, send: Page_Down } # ] 前翻
+    - { accept: "Control+o", toggle: simplification, when: composing }  # 简繁开关
+    # - { accept: "Control+Shift+O", toggle: fanjian, when: composing }  # 繁简开关
+    - { accept: "Control+p", toggle: pinyin, when: composing }  # PC 拼音开关
+    - { accept: "Control+i", toggle: emoji_cn, when: composing }  # PC emoji开关
+    - { accept: "Control+u", toggle: charset_comment_filter, when: composing }  # PC Unicode分区开关
+    - { accept: "Control+y", toggle: udpf_switch, when: composing }  #PC Unicode编码开关
+    - { accept: "Control+h", toggle: extended_char, when: composing } # PC 自定字集开关
+    - { accept: "Control+Shift+H", toggle: extended_char, when: composing } # PC 自定字集开关2
+    - { accept: "Control+j", toggle: chaifen, when: composing } # PC 拆分滤镜开关
+    # - { when: composing, accept: '&', toggle: emoji_cn } # 手机 emoji开关
+    - { when: composing, accept: ']', toggle: emoji_cn } # 手机 emoji开关
+    # - { when: composing, accept: '*', toggle: simplification } # 手机 繁简开关
+    - { when: composing, accept: '^', toggle: simplification } # 手机 繁简开关
+    # - { when: composing, accept: '\', toggle: pinyin } # 手机 拼音开关
+    - { when: composing, accept: '~', toggle: pinyin } # 手机 拼音开关
+    # - { when: composing, accept: '^', toggle: charset_comment_filter } # 手机 Unicode分区开关1
+    # - { when: composing, accept: '#', toggle: charset_comment_filter } # 手机 Unicode分区开关2
+    # - { accept: "%", toggle: udpf_switch, when: composing }  #手机 Unicode编码开关
+    # - { accept: "+", toggle: udpf_switch, when: composing }  #手机 Unicode编码开关
+    # - { when: composing, accept: '_', toggle: extended_char} # 手机 自定字集开关1
+    # - { when: composing, accept: ':', toggle: extended_char} # 手机 自定字集开关2
+    # - { when: composing, accept: '"', toggle: chaifen } # 手机 拆分滤镜开关
+    - { when: has_menu, accept: Right, send: Down } # 右方向键 向后移动焦点
+    - { when: has_menu, accept: Left, send: Up } # 左方向键 向前移动焦点
+    - { when: always, accept: "Control+period" , toggle: ascii_punct } # 中英标点切换
+    #- { when: always, accept: "Shift+space" , toggle: full_shape } # 全半角切换
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9%&]0?|[A-Za-z]+)$"
+    uppercase: "" #中文状态大写锁定直接上屏
+    reverse_lookup: "^`[a-z]*'?$"
+    easy_english: "^'[A-Z|a-z]*`?$"
+    expression: "^=.*$"
+
+menu:
+  page_size: 9 #候选数量
+  # alternative_select_labels: [ ㊀, ㊁, ㊂, ㊃, ㊄, ㊅, ㊆, ㊇, ㊈ ]  #自定义候选序号显示符
+
+historySJ:
+  input: z
+  size: 1
+  initial_quality: 0
+
+# historySJ2:
+#   input: o
+#   size: 1
+#   initial_quality: 0
+
+historyDM:
+  input: "["
+  size: 1
+  initial_quality: 999
+
+
+historyDM2:
+  input: "'"
+  size: 1
+  initial_quality: -999
+
+historyDM3:
+  input: "]"
+  size: 1
+  initial_quality: 999
+
+# ↓简繁(+部分异体)滤镜
+simplification:  #⇩四选一
+  opencc_config: st_tu.json        # 简 ➡ 繁·异（秃版标准）
+ # opencc_config: s2tw.json    # 简 ➡ 台湾正体
+ # opencc_config: s2hk.json    # 简 ➡ 香港繁体
+ # opencc_config: s2twp.json  # 简 ➡ 台湾正体（含常用词汇如：软体→軟體、鼠标→滑鼠）
+  option_name: simplification
+  tips: all  #all字词|char字
+
+# ↓繁简滤镜
+# fanjian:
+#   opencc_config: t2s.json   # 繁 ➡ 简（OpenCC标准）
+#   option_name: fanjian
+
+# ↓拼音滤镜
+pinyin:
+  opencc_config: pinyin.json
+  option_name: pinyin
+  show_in_comment: true #作为注解在后面显示
+  comment_format:
+    - 'xform/&nbsp;/ /'
+    # - "xform/^/ /"
+  tips: char
+  tags:
+    - abc
+    - tiger
+    - tigress
+    # - reverse_lookup
+
+
+# ↓emoji表情滤镜
+emoji_cn:
+  opencc_config: emoji.json
+  option_name: emoji_cn
+  tips: all
+
+# 临时英文
+easy_english:
+  dictionary: easy_english
+  tag: easy_english
+  prefix: "'"
+  tips: 〔En〕
+  enable_completion: true
+  enable_sentence: false
+  initial_quality: -1
+  preedit_format:
+    - "xlit|_| |"
+  comment_format: #去掉编码提示前的~号
+    - "xform/~/ /"
+
+# 拆分滤镜
+chaifen:
+  opencc_config: hu_cf.json
+  option_name: chaifen
+  show_in_comment: true 
+  comment_format:     
+    - "xform/&nbsp;/ /"
+  tags:     
+    - abc
+    - tiger
+    - tigress
+    - reverse_lookup
+  tips: all  #只给单字加滤镜，改为 char 。 词也显示，改为 all
+
+
+punctuator:
+  import_preset: TM_symbols
