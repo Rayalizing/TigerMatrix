@@ -137,7 +137,7 @@ speller:
   alphabet: "/*`;'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654&%1"
   # initials: "abcdefghijklmnopqrstuvwxyz;'"
   # auto_select_pattern: ^;\w+  # 自动上屏规则: 对 [;] 引导的编码实行候选唯一自动上屏
-  auto_select_pattern: ^;\w+|^\w{6}$|^[%&\w]+[*`/]  # 增加六码上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
+  auto_select_pattern: ^;\w+|^[%&\w]{6}$|^[%&\w]+[*`/]  # 增加六码自动上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
                       # 注意第三部分使用[%&\w]而不是\w，因为编码中可能出现的%&没有被“\w”包括。
   algebra:
   ################### 无重码的九键方案 ####################

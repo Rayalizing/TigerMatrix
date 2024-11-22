@@ -159,7 +159,7 @@ keyboards:
                 char: "#"
             width:
               portrait:
-                percentage: 0.11
+                percentage: 0.09
               landscape:
                 percentage: 0.12
             label:
@@ -171,7 +171,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: up
               - action:
                   character:
@@ -179,7 +179,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: down
             lightModeStyleName: 护眼绿_Q_浅
             darkModeStyleName: 护眼绿_Q_深
@@ -188,7 +188,7 @@ keyboards:
                 char: /
             width:
               portrait:
-                percentage: 0.11
+                percentage: 0.13
               landscape:
                 percentage: 0.12
             label:
@@ -200,7 +200,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: up
             lightModeStyleName: 护眼绿_Q_浅
             darkModeStyleName: 护眼绿_Q_深
@@ -268,37 +268,38 @@ keyboards:
       - keys:
           - action:
               character:
-                char: "["
+                char: (
+            processByRIME: false
             width:
               portrait:
-                percentage: 0.11
+                percentage: 0.09
               landscape:
                 percentage: 0.12
-            label: ( [ )
+            label: " ( )"
             swipe:
+              - action:
+                  character:
+                    char: "["
+                label:
+                  text: ""
+                display: true
+                processByRIME: false
+                direction: up
               - action:
                   character:
                     char: "]"
                 label:
                   text: ""
                 display: true
-                processByRIME: true
-                direction: up
-              - action:
-                  character:
-                    char: (
-                label:
-                  text: ""
-                display: true
-                processByRIME: true
-                direction: left
+                processByRIME: false
+                direction: down
               - action:
                   character:
                     char: )
                 label:
                   text: ""
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: right
             lightModeStyleName: 护眼绿_A_浅
             darkModeStyleName: 护眼绿_A_深
@@ -307,7 +308,7 @@ keyboards:
                 char: "*"
             width:
               portrait:
-                percentage: 0.11
+                percentage: 0.13
               landscape:
                 percentage: 0.12
             label:
@@ -319,7 +320,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: up
             lightModeStyleName: 护眼绿_A_浅
             darkModeStyleName: 护眼绿_A_深
@@ -392,7 +393,7 @@ keyboards:
           - action: shift
             width:
               portrait:
-                percentage: 0.11
+                percentage: 0.09
               landscape:
                 percentage: 0.12
             label:
@@ -404,7 +405,7 @@ keyboards:
                 char: "`"
             width:
               portrait:
-                percentage: 0.11
+                percentage: 0.13
               landscape:
                 percentage: 0.12
             label:
@@ -416,7 +417,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: up
             lightModeStyleName: 护眼绿_Z_浅
             darkModeStyleName: 护眼绿_Z_深
@@ -436,8 +437,7 @@ keyboards:
                 direction: up
               - action:
                   shortcutCommand: "#行首"
-                label:
-                  text: ""
+                label: I←
                 display: true
                 processByRIME: true
                 direction: down
@@ -449,7 +449,7 @@ keyboards:
                 processByRIME: true
                 direction: left
               - action:
-                  shortcutCommand: "#行首"
+                  shortcutCommand: "#行尾"
                 label:
                   text: ""
                 display: true
@@ -489,12 +489,12 @@ keyboards:
                 direction: up
               - action:
                   shortcutCommand: "#行尾"
-                label: 󰞔
+                label: →I
                 display: true
                 processByRIME: true
                 direction: down
               - action:
-                  shortcutCommand: "#行尾"
+                  shortcutCommand: "#行首"
                 label:
                   text: ""
                 display: true
@@ -563,11 +563,10 @@ keyboards:
             darkModeStyleName: 护眼绿_数字_深
           - action: space
             width:
-              portrait:
-                percentage: 0.39
+              portrait: available
               landscape:
                 percentage: 0.4
-            label: 🐰🌰🐿
+            label: 🐰🌰🐿🦌
             swipe:
               - action:
                   character:
@@ -590,7 +589,10 @@ keyboards:
           - action:
               character:
                 char: ","
-            width: available
+            width:
+              portrait:
+                percentage: 0.13
+              landscape: available
             label:
               text: ""
             swipe:
@@ -606,7 +608,7 @@ keyboards:
           - action: enter
             width:
               portrait:
-                percentage: 0.23
+                percentage: 0.195
               landscape:
                 percentage: 0.2
             label:
@@ -977,7 +979,7 @@ keyboards:
           - action: space
             processByRIME: false
             width: available
-            label: 🐰🌰🐿
+            label: 🌰
             lightModeStyleName: 护眼绿_数字_浅
             darkModeStyleName: 护眼绿_数字_深
           - action:
@@ -1339,7 +1341,7 @@ keyboards:
               portrait: available
               landscape:
                 percentage: 0.5
-            label: 🐰🌰🐿
+            label: 🐰🌰🐿🦌
             lightModeStyleName: 护眼绿_数字_浅
             darkModeStyleName: 护眼绿_数字_深
           - action:
@@ -1613,7 +1615,7 @@ keyboards:
             lightModeStyleName: 护眼绿_A_浅
             darkModeStyleName: 护眼绿_A_深
           - action:
-              character:
+              symbol:
                 char: d
             processByRIME: false
             width: available
@@ -1956,7 +1958,7 @@ keyboards:
               portrait:
                 percentage: 0.12
               landscape: available
-            label: 中
+            label: 9中
             swipe:
               - action:
                   keyboardType: 护眼绿英文数字☕️
@@ -1972,7 +1974,7 @@ keyboards:
               portrait: available
               landscape:
                 percentage: 0.4
-            label: 🐰🌰🐿
+            label: 🐰🌰🐿🦌
             lightModeStyleName: 护眼绿_数字_浅
             darkModeStyleName: 护眼绿_数字_深
           - action:
@@ -2199,7 +2201,7 @@ keyboards:
           - action: space
             processByRIME: false
             width: available
-            label: 🐰🌰🐿
+            label: 🌰
             lightModeStyleName: 护眼绿_数字_浅
             darkModeStyleName: 护眼绿_数字_深
           - action:
@@ -2568,7 +2570,7 @@ keyboards:
               portrait: available
               landscape:
                 percentage: 0.5
-            label: 🐰🌰🐿
+            label: 🐰🌰🐿🦌
             lightModeStyleName: 护眼绿_数字_浅
             darkModeStyleName: 护眼绿_数字_深
           - action:
