@@ -302,7 +302,7 @@ key_binder:  # 每条定义包含条件、接收按键（IBus规格的键名，�
     - { accept: "Control+Shift+H", toggle: extended_char, when: composing } # PC 自定字集开关2
     - { accept: "Control+j", toggle: chaifen, when: composing } # PC 拆分滤镜开关
     # - { when: composing, accept: '&', toggle: emoji_cn } # 手机 emoji开关
-    - { when: composing, accept: ']', toggle: emoji_cn } # 手机 emoji开关
+    - { when: composing, accept: '@', toggle: emoji_cn } # 手机 emoji开关
     # - { when: composing, accept: '*', toggle: simplification } # 手机 繁简开关
     - { when: composing, accept: '^', toggle: simplification } # 手机 繁简开关
     # - { when: composing, accept: '\', toggle: pinyin } # 手机 拼音开关
