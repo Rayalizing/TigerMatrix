@@ -269,7 +269,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: false
+                processByRIME: true
                 direction: up
               - action:
                   character:
@@ -309,7 +309,7 @@ keyboards:
                 label:
                   text: ""
                 display: true
-                processByRIME: false
+                processByRIME: true
                 direction: up
               - action:
                   character:
@@ -886,8 +886,9 @@ keyboards:
               - action:
                   character:
                     char: "0"
-                label: "0"
-                display: true
+                label:
+                  text: ""
+                display: false
                 processByRIME: false
                 direction: up
               - action:

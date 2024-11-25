@@ -137,7 +137,7 @@ speller:
   alphabet: "/*`;'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654&%1"
   # initials: "abcdefghijklmnopqrstuvwxyz;'"
   # auto_select_pattern: ^;\w+  # 自动上屏规则: 对 [;] 引导的编码实行候选唯一自动上屏
-  auto_select_pattern: ^;[%&\w]+|^[%&\w]{6}$|^[%&\w]+[*`/]  # 增加六码自动上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
+  auto_select_pattern: ^;[%&\w]+|^;[%&\w]+[*`/]|^[%&\w]{6}$|^[%&\w]+[*`/]  # 增加六码自动上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
                       # 注意使用[%&\w]而不是\w，因为编码中可能出现的%&没有被“\w”包括。
   algebra:
   ################### 无重码的九键方案 ####################
@@ -205,8 +205,10 @@ speller:
     ### 以上灵活使用“derive/”和“xform/”，可以确保候选框随时都有信息，不会存在无意义的空框。
       #同时让第三和第六码仅有选择的作用而不会扰乱原来的编码（如果使用derive的话，会导致第三和第六码增加重码）
 
-    # ## 删除二码操作后产生的冗余重复码：（上一步使用了^和$，所以不需要了）
-    # - xform/(\u){2}/$1/
+    # 适配;引导的快符(只需派生一码即可，两码的快符派生后有三码，失去了快的意义)：
+    - derive/^(;[qadgjmptx])$/$1\x2F/
+    - derive/^(;[wbehknruy])$/$1*/
+    - derive/^(;[cfilosvz])$/$1`/
 
     # 将大写字母转换成小写字母
     - xlit/QWERTYQIOPATDFGHJKLZXCVBNM/qwertyqiopatdfghjklzxcvbnm/
