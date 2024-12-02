@@ -156,8 +156,7 @@ keyboards:
       - keys:
           - action:
               character:
-                char: "#"
-            processByRIME: false
+                char: =
             width:
               portrait:
                 percentage: 0.09
@@ -259,7 +258,7 @@ keyboards:
             darkModeStyleName: 护眼绿_Q_深
           - action:
               character:
-                char: "%"
+                char: "@"
             width: available
             label: ABC
             swipe:
@@ -299,7 +298,7 @@ keyboards:
             darkModeStyleName: 护眼绿_Q_深
           - action:
               character:
-                char: "&"
+                char: "#"
             width: available
             label: DEF
             swipe:
@@ -416,15 +415,15 @@ keyboards:
                 direction: down
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: left
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: right
@@ -627,10 +626,10 @@ keyboards:
             swipe:
               - action:
                   character:
-                    char: =
-                label: =
+                    char: "%"
+                label: "%"
                 display: true
-                processByRIME: true
+                processByRIME: false
                 direction: up
               - action:
                   character:
@@ -2073,15 +2072,15 @@ keyboards:
                 direction: down
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: left
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: right
@@ -3046,15 +3045,15 @@ keyboards:
                 direction: down
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: left
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: right
@@ -4864,15 +4863,15 @@ keyboards:
                 direction: down
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: left
               - action:
                   character:
-                    char: "@"
-                label: "@🧍"
+                    char: "&"
+                label: "&🧍"
                 display: true
                 processByRIME: true
                 direction: right

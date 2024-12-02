@@ -134,11 +134,11 @@ speller:
   auto_select: true
   max_code_length: 6
   # alphabet: "[;'zyxwvutsrqponmlkjihgfedcba]"
-  alphabet: "/*`;'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654&%1"
+  alphabet: "/*`;'zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA987654#@1"
   # initials: "abcdefghijklmnopqrstuvwxyz;'"
   # auto_select_pattern: ^;\w+  # 自动上屏规则: 对 [;] 引导的编码实行候选唯一自动上屏
-  auto_select_pattern: ^;[%&\w]+|^;[%&\w]+[*`/]|^[%&\w]{6}$|^[%&\w]+[*`/]  # 增加六码自动上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
-                      # 注意使用[%&\w]而不是\w，因为编码中可能出现的%&没有被“\w”包括。
+  auto_select_pattern: ^;[@#\w]+|^;[@#\w]+[*`/]|^[@#\w]{6}$|^[@#\w]+[*`/]  # 增加六码自动上屏功能; 增加[*`/]结尾编码的候选唯一自动上屏
+                      # 注意使用[@#\w]而不是\w，因为编码中可能出现的@#没有被“\w”包括。
   algebra:
   ################### 无重码的九键方案 ####################
     # 将词典文件中符合对应模式的汉字编码，通过“xform/”或“derive/”转换/派生成新的编码。
@@ -217,8 +217,8 @@ speller:
   ################### 适配九键布局 ###################
     # （表达式参考自【仓*九宫格】方案的T9拼音穷举）
     # 相比使用“xlit/”, “derive/”可以兼容原字母键盘，使得字母键盘和九键键盘可以同时使用。
-    - derive/[abc]/%/  # 这里用%代替2，保留数字2的选择功能，方便后续设置分号二选。
-    - derive/[def]/&/  # 这里用&代替3，保留数字3的选择功能，方便后续设置单引号三选。
+    - derive/[abc]/@/  # 这里用@代替2，保留数字2的选择功能，方便后续设置分号二选。
+    - derive/[def]/#/  # 这里用#代替3，保留数字3的选择功能，方便后续设置单引号三选。
     - derive/[ghi]/4/
     - derive/[jkl]/5/
     - derive/[mno]/6/
@@ -267,18 +267,18 @@ key_binder:  # 每条定义包含条件、接收按键（IBus规格的键名，�
     # - {accept: KP_0, send: space, when: has_menu}
     - {accept: KP_1, send: 7, when: always}           ## 小键盘布局图：
     - {accept: KP_2, send: 8, when: always}    ##  Lock       /	      *		 ←
-    - {accept: KP_3, send: 9, when: always}    ##  1 qw     % abc   & def	 	
+    - {accept: KP_3, send: 9, when: always}    ##  1 qw     @ abc   # def	 	
     - {accept: KP_4, send: 4, when: always}    ##  4 ghi    5 jkl   6 mno	 `
     - {accept: KP_5, send: 5, when: always}    ##  7 prs    8 tuv   9 xyz	 	
     - {accept: KP_6, send: 6, when: always}    ##      Space		      ;    '
     - {accept: KP_7, send: 1, when: always}    ##  说明：空格首选、分号次选（+符号输入）、单引号三选（+英文输入）；“/”表情输入（+lua）、反引号拼音反查。
-    - {accept: KP_8, send: percent, when: always}
-    - {accept: KP_9, send: ampersand, when: always}
-    - {accept: KP_Decimal,  send: semicolon,     when: always}  # 将小键盘的小数点映射到主键盘的。号
-    - {accept: KP_Enter,    send: apostrophe,      when: always}  # 将小键盘的Enter键映射到主键盘的,号
-    - {accept: KP_Divide,   send: slash,  when: always}  # 将小键盘的/键映射到主键盘的;键
-    - {accept: KP_Multiply, send: asterisk, when: always}  # 将小键盘的*键映射到主键盘的-号
-    - {accept: KP_Add,      send: grave,      when: always}  # 将小键盘的+键映射到主键盘的空格
+    - {accept: KP_8, send: at, when: always}
+    - {accept: KP_9, send: numbersign, when: always}
+    - {accept: KP_Decimal,  send: semicolon,     when: always}  # 将小键盘的小数点映射到主键盘的;号
+    - {accept: KP_Enter,    send: apostrophe,      when: always}  # 将小键盘的Enter键映射到主键盘的'号
+    - {accept: KP_Divide,   send: slash,  when: always}  # 将小键盘的/键映射到主键盘的/键
+    - {accept: KP_Multiply, send: asterisk, when: always}  # 将小键盘的*键映射到主键盘的*号
+    - {accept: KP_Add,      send: grave,      when: always}  # 将小键盘的+键映射到主键盘的`号
     - {accept: KP_Subtract, send: BackSpace,  when: always}  # 将小键盘的-键映射到主键盘的退格
     #####################/将小键盘 0~9 映射到主键盘，对应手机九宫格键盘的输入习惯。#####################
 
@@ -303,8 +303,8 @@ key_binder:  # 每条定义包含条件、接收按键（IBus规格的键名，�
     - { accept: "Control+h", toggle: extended_char, when: composing } # PC 自定字集开关
     - { accept: "Control+Shift+H", toggle: extended_char, when: composing } # PC 自定字集开关2
     - { accept: "Control+j", toggle: chaifen, when: composing } # PC 拆分滤镜开关
-    # - { when: composing, accept: '&', toggle: emoji_cn } # 手机 emoji开关
-    - { when: composing, accept: '@', toggle: emoji_cn } # 手机 emoji开关
+    - { when: composing, accept: '&', toggle: emoji_cn } # 手机 emoji开关
+    # - { when: composing, accept: '@', toggle: emoji_cn } # 手机 emoji开关
     # - { when: composing, accept: '*', toggle: simplification } # 手机 繁简开关
     - { when: composing, accept: '^', toggle: simplification } # 手机 繁简开关
     # - { when: composing, accept: '\', toggle: pinyin } # 手机 拼音开关
@@ -324,7 +324,7 @@ key_binder:  # 每条定义包含条件、接收按键（IBus规格的键名，�
 recognizer:
   import_preset: default
   patterns:
-    punct: "^/([0-9%&]0?|[A-Za-z]+)$"
+    punct: "^/([0-9@#]0?|[A-Za-z]+)$"
     uppercase: "" #中文状态大写锁定直接上屏
     reverse_lookup: "^`[a-z]*'?$"
     easy_english: "^'[A-Z|a-z]*`?$"
